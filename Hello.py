@@ -49,3 +49,5 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+st.title("쏭쏭의 첫 번째 앱에 오신 것을 환영합니다!")
