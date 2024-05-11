@@ -26,6 +26,6 @@ column = st.radio(label="열 이름을 선택해주세요.", options = csv_file_
 st.subheader(column,'의 분포를 그려보겠습니다.!')
 st.bar_chart(csv_file_df[column].value_counts())
 
-fig, ax = plt.subplots()
-sns.histplot(csv_file_df.bill[column], binrange=[30,60],binwidth=2.5)
+#fig, ax = plt.subplots()
+#sns.histplot(csv_file_df.[column], binrange=[30,60],binwidth=2.5)
 #st.pyplot(fig)
