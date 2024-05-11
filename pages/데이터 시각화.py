@@ -22,9 +22,9 @@ if  csv_file is not None :
     csv_file_df = pd.read_csv(csv_file, encoding = "euc-kr")
     st.write(csv_file_df.head(5))
 
-column = st.radio(label="열 이름을 선택해주세요.", options = csv_file_df.columns)
-st.subheader(column,'의 분포를 그려보겠습니다.!')
-st.bar_chart(csv_file_df[column].value_counts())
+    column = st.radio(label="열 이름을 선택해주세요.", options = csv_file_df.columns)
+    st.subheader(column,'의 분포를 그려보겠습니다.!')
+    st.bar_chart(csv_file_df[column].value_counts())
 
 #fig, ax = plt.subplots()
 #sns.histplot(csv_file_df.[column], binrange=[30,60],binwidth=2.5)
